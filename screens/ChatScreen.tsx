@@ -109,7 +109,7 @@ export default function ChatScreen({ navigation, route }: Props) {
       const base64Img = `data:image/jpeg;base64,${result.assets[0].base64}`;
       try {
         await addDoc(messagesCollection, {
-          text: "📷 Mengirim gambar...",
+          text: "Mengirim gambar...",
           user: name,
           image: base64Img,
           createdAt: serverTimestamp(),
